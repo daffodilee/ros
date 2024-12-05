@@ -1,4 +1,4 @@
-# Install script for directory: /home/huseyin/Desktop/robotics_HW/src
+# Install script for directory: /home/huseyin/Desktop/robotics_HW/src/turtlebot3_simulations/turtlebot3_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,119 +38,50 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  
-      if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
-        file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
-      endif()
-      if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/.catkin")
-        file(WRITE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/.catkin" "")
-      endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/huseyin/Desktop/robotics_HW/build/turtlebot3_simulations/turtlebot3_gazebo/catkin_generated/installspace/turtlebot3_gazebo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/huseyin/Desktop/robotics_HW/install/_setup_util.py")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/huseyin/Desktop/robotics_HW/install" TYPE PROGRAM FILES "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/_setup_util.py")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/huseyin/Desktop/robotics_HW/install/env.sh")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/huseyin/Desktop/robotics_HW/install" TYPE PROGRAM FILES "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/env.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/huseyin/Desktop/robotics_HW/install/setup.bash;/home/huseyin/Desktop/robotics_HW/install/local_setup.bash")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/huseyin/Desktop/robotics_HW/install" TYPE FILE FILES
-    "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/setup.bash"
-    "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/local_setup.bash"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_gazebo/cmake" TYPE FILE FILES
+    "/home/huseyin/Desktop/robotics_HW/build/turtlebot3_simulations/turtlebot3_gazebo/catkin_generated/installspace/turtlebot3_gazeboConfig.cmake"
+    "/home/huseyin/Desktop/robotics_HW/build/turtlebot3_simulations/turtlebot3_gazebo/catkin_generated/installspace/turtlebot3_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/huseyin/Desktop/robotics_HW/install/setup.sh;/home/huseyin/Desktop/robotics_HW/install/local_setup.sh")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/huseyin/Desktop/robotics_HW/install" TYPE FILE FILES
-    "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/setup.sh"
-    "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/local_setup.sh"
-    )
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_gazebo" TYPE FILE FILES "/home/huseyin/Desktop/robotics_HW/src/turtlebot3_simulations/turtlebot3_gazebo/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/huseyin/Desktop/robotics_HW/install/setup.zsh;/home/huseyin/Desktop/robotics_HW/install/local_setup.zsh")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_gazebo/turtlebot3_drive" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_gazebo/turtlebot3_drive")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_gazebo/turtlebot3_drive"
+         RPATH "")
   endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_gazebo" TYPE EXECUTABLE FILES "/home/huseyin/Desktop/robotics_HW/devel/lib/turtlebot3_gazebo/turtlebot3_drive")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_gazebo/turtlebot3_drive" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_gazebo/turtlebot3_drive")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_gazebo/turtlebot3_drive"
+         OLD_RPATH "/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/noetic/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_gazebo/turtlebot3_drive")
+    endif()
   endif()
-file(INSTALL DESTINATION "/home/huseyin/Desktop/robotics_HW/install" TYPE FILE FILES
-    "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/setup.zsh"
-    "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/local_setup.zsh"
-    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/huseyin/Desktop/robotics_HW/install/.rosinstall")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/huseyin/Desktop/robotics_HW/install" TYPE FILE FILES "/home/huseyin/Desktop/robotics_HW/build/catkin_generated/installspace/.rosinstall")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/turtlebot3_gazebo" TYPE DIRECTORY FILES "/home/huseyin/Desktop/robotics_HW/src/turtlebot3_simulations/turtlebot3_gazebo/include/turtlebot3_gazebo/")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/huseyin/Desktop/robotics_HW/build/gtest/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3/turtlebot3/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3/turtlebot3_navigation/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3_simulations/turtlebot3_simulations/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3/turtlebot3_bringup/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3/turtlebot3_example/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3_simulations/turtlebot3_fake/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3_simulations/turtlebot3_gazebo/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3/turtlebot3_slam/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3/turtlebot3_teleop/cmake_install.cmake")
-  include("/home/huseyin/Desktop/robotics_HW/build/turtlebot3/turtlebot3_description/cmake_install.cmake")
-
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_gazebo" TYPE DIRECTORY FILES
+    "/home/huseyin/Desktop/robotics_HW/src/turtlebot3_simulations/turtlebot3_gazebo/launch"
+    "/home/huseyin/Desktop/robotics_HW/src/turtlebot3_simulations/turtlebot3_gazebo/models"
+    "/home/huseyin/Desktop/robotics_HW/src/turtlebot3_simulations/turtlebot3_gazebo/rviz"
+    "/home/huseyin/Desktop/robotics_HW/src/turtlebot3_simulations/turtlebot3_gazebo/worlds"
+    )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/huseyin/Desktop/robotics_HW/build/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
