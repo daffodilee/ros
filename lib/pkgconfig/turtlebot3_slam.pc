@@ -1,0 +1,8 @@
+prefix=/home/huseyin/Desktop/robotics_HW/devel
+
+Name: turtlebot3_slam
+Description: Description of turtlebot3_slam
+Version: 1.2.6
+Cflags: -I/home/huseyin/Desktop/robotics_HW/src/turtlebot3/turtlebot3_slam/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs
